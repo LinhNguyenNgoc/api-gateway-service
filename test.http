@@ -1,0 +1,15 @@
+### 1. Test gọi Product Service qua Gateway
+GET http://localhost:8080/api/products
+
+### 2. Test gọi Order Service qua Gateway
+GET http://localhost:8080/api/orders
+
+### 3. Test gọi Inventory Service qua Gateway
+GET http://localhost:8080/api/inventories
+
+
+# Build image Docker (nhớ thay your-dockerhub-username bằng tài khoản của bạn)
+docker build -t your-dockerhub-username/api-gateway-service:latest .
+
+# Push lên Docker Hub
+docker push your-dockerhub-username/api-gateway-service:latest
